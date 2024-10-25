@@ -33,8 +33,10 @@ def procesar_adivinanza(letra, letras_adivinadas, letras_correctas, palabra_secr
 def JuegoAhorcado():
     palabra_secreta = seleccionar_palabra()
     palabra_mostrada, letras_adivinadas, letras_correctas, intentos_restantes = inicializar_juego(palabra_secreta)
-
-    print("¡Bienvenido al juego del ahorcado!")
+    intentos = 6
+    print('BIENVENIDO AL JUEGO DEL AHORCADO 🎃 EDICIÓN HALLOWEEN 🎃\n')
+    print('Reglas del juego: Introduce letras para adivinar la palabra oculta .')
+    print(f'Tienes {intentos} intentos. ¡Buena suerte!')
 
     while intentos_restantes > 0 and "_" in palabra_mostrada: # Mientras haya intentos y la palabra no esté completa
         mostrar_estado(palabra_mostrada, intentos_restantes)
@@ -51,7 +53,7 @@ def JuegoAhorcado():
             intentos_restantes -= 1
 
     if "_" not in palabra_mostrada:# Si la palabra está completa
-        print("\n¡Felicidades! Has adivinado la palabra:", palabra_secreta)
+        print("\n🏆🎃¡Felicidades! Has adivinado la palabra:", palabra_secreta, "🏆🎃")
     else:
-        print("\n¡Te has quedado sin intentos! La palabra era:", palabra_secreta)
+        print("\n😞¡Te has quedado sin intentos! La palabra era:", palabra_secreta)
     mostrar_ahorcado(6 - intentos_restantes)

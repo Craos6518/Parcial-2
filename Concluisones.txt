@@ -1,0 +1,5 @@
+AL momento de valodar con otros programadores y versiones del JUEGO AHORCADO, se evidenciaron que hay similitudes, que estan dentro del rango de aceptabilidad ya que son objetivos principales del juego.
+
+Se trato de no hacer un plagio directo y se generaon evidencias notables desde la modularidad, la segmentacion de trabajo y flujo de trabajo, además, los mensajes de usuario se trataron de variar un poco.
+
+Se recalca el hecho de que existen similitudes y se resalta en el archivo "Relaciones con otras paginas.txt" ya que en ellas se usaron funciones, y mensajes que llamaron la atención, por lo tanto fuera de esas relaciones directas las similitudes son esperadas por el origen y finalidad del juego.

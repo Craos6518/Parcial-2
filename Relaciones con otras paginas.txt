@@ -1,0 +1,7 @@
+La intruccion del juego es sacado de la pagina de https://telefonicatech.com/blog/programa-tu-juego-del-ahorcado-edicion-halloween
+
+Se modifca la idea de usar el string para almacenar los distintos estados del juego, las etapas del ahorcado de la pagina: https://platzi.com/tutoriales/4227-python-fundamentos/25023-creando-un-espectacular-juego-con-python/
+
+Dibujo del ahorcado:
+
+    Al igual que en los códigos anteriores, este incluye el dibujo del ahorcado representado mediante ASCII art. Aunque el dibujo es similar a los otros, esto es una práctica común en la programación del juego del ahorcado y no necesariamente implica plagio.
