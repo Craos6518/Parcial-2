@@ -1,0 +1,46 @@
+1. Código Principal del Juego
+Limitaciones:
+
+    Dependencia de Módulos: El código principal depende de los módulos ahorcado_logica, ahorcado_graficos y ahorcado_palabras. Si alguno de estos módulos presenta errores o no está disponible, el juego no podrá ejecutarse.
+    Gestión de Errores: No hay un manejo de excepciones. Si ocurre un error durante la ejecución de la función juego_ahorcado, el programa se detendrá abruptamente.
+
+2. Lógica del Juego
+Limitaciones:
+
+    Validación de Entradas:
+        Solo se permiten letras del alfabeto. Cualquier entrada que no sea una letra (números, símbolos, múltiples letras) se ignorará, pero no se maneja adecuadamente en cuanto a retroalimentación al usuario.
+        La entrada debe ser exactamente una letra. Si el usuario introduce más de una letra, el programa no lo gestionará de manera informativa, más allá de la advertencia.
+    Número de Intentos:
+        El juego está limitado a un máximo de 6 intentos. Esto puede resultar en que algunos jugadores se frustren si no conocen la palabra o si les tocan palabras difíciles.
+        Si un jugador juega repetidamente, las palabras no se reintegran o se ajustan en la lista de intentos, lo que puede hacer que el juego se vuelva predecible.
+    Dificultad de las Palabras:
+        Las palabras son elegidas aleatoriamente de una lista. Algunas palabras pueden ser significativamente más fáciles o más difíciles que otras, lo que puede afectar la experiencia del juego.
+    Fin del Juego:
+        El juego termina automáticamente cuando se agotan los intentos o se adivina la palabra, sin opción de jugar nuevamente a menos que se reinicie el programa.
+
+3. Visualización del Ahorcado
+Limitaciones:
+
+    Rango de Intentos:
+        La función mostrar_ahorcado espera que el parámetro intentos esté en el rango de 0 a 6. Si el número de intentos es menor que 0 o mayor que 6, se producirá un error de índice (IndexError).
+    Dependencia de ASCII:
+        La representación gráfica utiliza solo caracteres ASCII. Si se ejecuta en un entorno que no puede mostrar estos caracteres correctamente, la visualización del ahorcado puede no ser clara.
+    Falta de Detalles Visuales:
+        La visualización se limita a un conjunto de etapas. Si se desea un diseño más atractivo o moderno, habría que hacer modificaciones adicionales.
+
+4. Selección de Palabras
+Limitaciones:
+
+    Estaticidad de la Lista de Palabras:
+        Las palabras están definidas de forma estática en el código. Para agregar más variedad, el desarrollador debe modificar el código, lo que puede ser engorroso.
+    Diversidad de Palabras:
+        La lista contiene palabras de diferentes categorías (animales y profesiones), pero puede carecer de una amplia variedad, lo que podría resultar en un juego repetitivo.
+    Manejo de Espacios en Palabras:
+        Algunas palabras contienen espacios (por ejemplo, "oso hormiguero"). Esto podría complicar la lógica del juego, ya que el jugador debe adivinar múltiples letras en una sola palabra.
+    Acentuación:
+        La lista no incluye palabras acentuadas. Si se espera que el juego maneje correctamente el idioma español, es importante incluir todas las variantes y acentos.
+
+Consideraciones Generales
+
+    Experiencia del Usuario: Las limitaciones en la validación de entradas y el manejo de errores pueden afectar la experiencia del usuario. Una experiencia más fluida incluiría retroalimentación clara y manejo adecuado de errores.
+    Escalabilidad: La estructura actual no es fácilmente escalable. Si se desea agregar características adicionales (como niveles de dificultad o una interfaz gráfica de usuario), requeriría una reestructuración significativa del código.

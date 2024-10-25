@@ -1,0 +1,42 @@
+Juego del Ahorcado
+
+Este módulo permite jugar al clásico juego del ahorcado. Los usuarios intentan adivinar una palabra secreta letra por letra, dentro de un número limitado de intentos.
+
+Funciones:
+- juego_ahorcado(): Inicia una partida del juego del ahorcado, gestionando la lógica del juego y la interacción con el usuario.
+ 
+ 
+Módulo de Lógica del Juego del Ahorcado
+
+Este módulo contiene la lógica principal para jugar al ahorcado, gestionando el estado del juego, las entradas del usuario y la interacción.
+
+Funciones:
+- inicializar_juego(palabra_secreta): Inicializa el estado del juego, creando la palabra mostrada y configurando las letras adivinadas y los intentos restantes.
+- mostrar_estado(palabra_mostrada, intentos_restantes): Muestra el estado actual del juego al usuario, incluyendo la palabra en progreso y los intentos restantes.
+- procesar_adivinanza(letra, letras_adivinadas, letras_correctas, palabra_secreta, palabra_mostrada): Procesa la letra adivinada, actualizando el estado del juego según corresponda.
+- juego_ahorcado(): Controla el flujo del juego, gestionando las interacciones con el usuario y verificando el estado de la partida.
+ 
+ 
+Función para Mostrar el Estado Actual del Ahorcado
+
+Esta función dibuja el estado actual del ahorcado según el número de intentos restantes.
+
+Parámetros:
+- intentos (int): El número de intentos restantes que tiene el jugador.
+
+Esta función muestra el dibujo del ahorcado en diferentes etapas:
+0 intentos restantes: El ahorcado está completo.
+1 intento restante: El ahorcado está parcialmente dibujado.
+...
+6 intentos restantes: El ahorcado no está dibujado.
+ 
+ 
+Módulo de Selección de Palabras para el Juego del Ahorcado
+
+Este módulo contiene una lista de palabras y una función para seleccionar una palabra aleatoria que será adivinada por el jugador.
+
+Lista de Palabras:
+- palabras (list): Contiene palabras que los jugadores pueden adivinar, incluyendo animales y profesiones.
+
+Funciones:
+- seleccionar_palabra(): Selecciona y devuelve una palabra aleatoria de la lista de palabras.
