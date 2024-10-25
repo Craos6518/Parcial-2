@@ -1,7 +1,8 @@
 # Función que dibuja el estado actual del ahorcado
-def mostrar_ahorcado(intentos):
+def mostrar_ahorcado(intentos): # Recibe el número de intentos restantes
     etapas = [
-        """
+        # Etapa 0
+        """ 
            +---+
            |   |
            |    
@@ -9,7 +10,7 @@ def mostrar_ahorcado(intentos):
            |    
            |    
         =========
-        """,
+        """,# Etapa 1
         """
            +---+
            |   |
@@ -18,7 +19,7 @@ def mostrar_ahorcado(intentos):
            |    
            |    
         =========
-        """,
+        """,# Etapa 2
         """
            +---+
            |   |
@@ -27,7 +28,7 @@ def mostrar_ahorcado(intentos):
            |    
            |    
         =========
-        """, 
+        """, # Etapa 3
         """
            +---+
            |   |
@@ -36,7 +37,7 @@ def mostrar_ahorcado(intentos):
            |    
            |    
         =========
-        """, 
+        """, # Etapa 4
         """
            +---+
            |   |
@@ -45,7 +46,7 @@ def mostrar_ahorcado(intentos):
            |    
            |    
         =========
-        """, 
+        """, # Etapa 5
         """
            +---+
            |   |
@@ -54,7 +55,7 @@ def mostrar_ahorcado(intentos):
            |  /  
            |    
         =========
-        """,
+        """,# Etapa 6
         """
            +---+
            |   |
@@ -63,6 +64,6 @@ def mostrar_ahorcado(intentos):
            |  / \  
            |    
         =========
-        """
+        """# 6 intentos
     ]
-    print(etapas[intentos])
+    print(etapas[intentos])# Mostrar etapa correspondiente
